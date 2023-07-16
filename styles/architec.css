@@ -1,38 +1,44 @@
-body{
+body {
     font-family: 'Work Sans', sans-serif;
-    
+
 }
-.btn-primary{
+
+.btn-primary {
     width: 180px;
-height: 64px;
-border-radius: 8px;
-background: #FF900E;
-color:  #FFF;
-font-size: 20px;
-border: none;
-cursor: pointer;
+    height: 64px;
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
 }
+
 /* header styls */
-header{
+header {
     background-color: #ff900e1a;
-    padding: 50px 230px ;
-    
+    padding: 50px 230px;
+
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 nav ul {
     display: flex;
-    
+
 }
+
 nav li {
     list-style: none;
-    margin-right:30px;
+    margin-right: 30px;
     font-size: 18px;
     font-weight: 500;
 }
+
 /* #login{
     margin-right: -30px;
 } */
@@ -40,55 +46,99 @@ nav li a {
     text-decoration: none;
     color: #424242;
 }
-.nav-title{
+
+.nav-title {
     font-size: 2.5rem;
     color: #131313;
     font-weight: 700;
-    
-    
+
+
 }
+
 /* banner styles */
-.banner-content{
+.banner-content {
     max-width: 800px;
     text-align: center;
     margin: 0 auto;
-    
+
 }
-.banner-title{
+
+.banner-title {
     font-size: 64px;
     font-weight: 700;
 }
+
 .banner img {
     width: 100%;
-    margin-top:20px;
-    
+    margin-top: 20px;
+
 }
-.banner-descriptio{
-    
-}
+
+.banner-descriptio {}
+
 /* responsive styles  */
 
 @media screen and (max-width:576px) {
-    header{
+    header {
         padding: 20px;
     }
-    nav{
+
+    nav {
         flex-direction: column;
     }
-    .btn-primary{
+    .btn-primary {
         width: 120px;
         height: 45px;
         font-size: 13px;
     }
 }
+
 /* tablet or mediam devices */
 
 @media screen and (min-width:576px)and (max-width:960px) {
-   
-    nav{
+
+    nav {
         flex-direction: column;
     }
-    header{
+
+    header {
         padding: 40px;
     }
+}
+/* main section styles */
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* teams styles */
+.teams-container{
+    display: flex;
+    align-items: center;
+}
+
+.teams-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:24px;
+
+}
+.teams-content{
+    padding-right: 70px;
+    padding-left: 70px;
+}
+.teams-content-title{
+    font-size: 45px;
+    
+}
+.quick{
+color: #727272;
+font-weight: 500;
+}
+.of-our{
+color:  #131313;
+font-weight: 700;
+}
+.features{
+color: #FF900E;
+font-weight: 700;
 }
